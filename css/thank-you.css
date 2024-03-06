@@ -1,0 +1,112 @@
+
+/*THANKYOU*/
+
+
+thanks-wrap {
+    background: #FFFFFF;
+    padding: 30px;
+    margin: 0 auto 10px;
+    display: none;
+    max-width: 320px;
+}
+
+.checkmark {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    -webkit-animation: dash 2s ease-in-out;
+    animation: dash 2s ease-in-out;
+}
+
+.spin {
+    -webkit-animation: spin 2s;
+    animation: spin 2s;
+    transform-origin: 50% 50%;
+}
+
+h2 {
+    -webkit-animation: text 1s;
+    animation: text 1s;
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes text {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.mg-70 {
+    margin: 70px 0px;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 1200px){
+    .h2, h2 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 768px){
+    footer {
+        margin-bottom: 0px;
+    }
+}
+/*THANKYOU*/

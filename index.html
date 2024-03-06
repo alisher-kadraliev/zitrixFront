@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/thank-you.css" />
+    <link rel="stylesheet" href="css/wp.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+  </head>
+  <body>
+    <div class="bg-[url('img/background.jpeg')] bg-cover pt-10">
+      <header class=" z-50  top-0 block transition-all  w-full bg-transparent " id="nav-fixed">
+        <div class="container">
+          <div class="flex justify-between items-center">
+            <a href="">
+              <img
+                src="img/mainLogo.png"
+                class="w-[150px] bg-white rounded-xl auto"
+                alt=""
+              />
+            </a>
+            <div class="flex gap-2 flex-row justify-center items-center">
+              <a href=""
+                ><svg
+                  class="text-primary hover:text-primaryHover w-7 h-auto mt-5 mr-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"
+                  ></path>
+                </svg>
+              </a>
+              <a href=""
+                ><svg
+                  class="text-primary hover:text-primaryHover w-7 h-auto mt-5 mr-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
+                  ></path>
+                </svg>
+              </a>
+              <div
+                class="hidden lg:flex flex-col gap-2 border-l-2 text-primary hover:text-primaryHover pl-3 border-primary"
+              >
+                <a href="tel:+905307690836" class="text-[16px]">CALL US!</a>
+                <a href="tel:+905307690836" class="text-[25px] font-semibold"
+                  >+90 530 769 08 36</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="flex gap-40 relative">
+        <div class="w-full lg:w-[40%] pb-10">
+          <h1
+            class="slidehM font-extrabold max-lg:text-[26px] max-lg:text-center"
+          >
+            5 Star Hotel Gift in Treatments
+          </h1>
+          <p class="max-lg:text-[16px] max-lg:text-center text-white">
+            Dental implant is an artificial tooth root made of titanium
+            material, placed in the jawbone, made for the purpose of restoring
+            function and aesthetics in cases of tooth deficiency.
+          </p>
+          <div
+            class="rounded-[25px] flex flex-col justify-center items-center mt-6 w-full lg:w-[86%] bbg-x h-auto"
+          >
+            <h3 class="text-black font-black text-[24px] mt-4">
+              CONTACT US NOW
+            </h3>
+            <form action="" class="p-4 lg:p-10">
+              <div>
+                <input
+                  type="text"
+                  class="w-full p-3 placeholder:text-black mb-4 rounded-lg text-black text-center text-[16px] border-formColor border-2"
+                  placeholder="NAME / SURNAME"
+                />
+                <input
+                  type="text"
+                  placeholder="7400 123456"
+                  class="w-full p-3 placeholder:text-black mb-4 rounded-lg text-black text-center text-[16px] border-formColor border-2"
+                />
+                <input
+                  type="text"
+                  placeholder="ENTER YOUR EMAIL"
+                  class="w-full p-3 placeholder:text-black mb-4 rounded-lg text-black text-center text-[16px] border-formColor border-2"
+                />
+                 
+                <button
+                  type="submit"
+                  class="font-bold w-full border-2 border-primary p-3 rounded-lg text-[16px] text-center text-primary bg-formColor hover:text-primaryHover hover:bg-formColorHover"
+                >
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <img src="img/mdrSlider.png" class=" w-[550px] h-[550px] lg:inline-block absolute hidden bottom-0 right-[10%]" alt="">
+        </div>
+      </div>
+    </div>
+    <main class="bg-[#e8e8e8]">
+      <!-- who are we -->
+      <section ">
+        <div class="container">
+          <div
+            class="flex py-20 lg:flex-row gap-10 flex-col justify-center items-center"
+          >
+            <img src="img/about.jpeg" alt="" class="lg:w-[40%]" />
+            <div class="lg:w-[50%]">
+              <h1 class="text-primary text-[27px] lg:text-[36px]">
+                <strong>WHO </strong>ARE WE?
+              </h1>
+              <p class="mb-4 text-[16px] text-desc">
+                XIRTIZ is a TURSAB ( Turkey Travel Agencies Association ) member
+                tourism agency and government certified and supported health
+                tourism company. Our main office is located in Antalya, but we
+                have footprints around Turkey, and across Europe through many
+                partnerships. We have a long history in medical field through
+                offering digital solutions for health sector. The idea of being
+                a player in health tourism area is a natural result of our
+                numerous contacts and deep knowledge in the field. Being the
+                solution partner for doctors, led us come to a point where we
+                wanted to be the solution partner for patients as well. We will
+                inform you about the procedures you need. We will be a bridge
+                between you and the doctor.
+              </p>
+              <p class="mb-4 text-[16px] text-desc">
+                We will arrange your stay here from A to Z. We will assist and
+                accompany you in your language throughout your stay in Turkey.
+                We will follow up your post-op needs. And finally when you are
+                completely healed, we will still follow your regular check-ups
+                if necessary.
+              </p>
+              <p class="mb-4 text-[16px] text-desc">
+                Our company is a female dominated entrepreneurship, working in
+                harmony, not money driven but idealistic. Our goal is to serve
+                our patients with love, care, sincerity and focus. We love
+                helping people, seeing them happy. Currently, we are mostly
+                serving European patients for treatments such as plastic
+                surgery, cosmetic dentistry, gastric bypass, eye and ortopedic
+                surgeries. Our team consists of health consultants speaking a
+                variety of languages, and each has a deep knowledge of the
+                medical area they are dealing with.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- who are we -->
+      <!-- how we work-->
+      <section >
+        <div class="container">
+          <h1
+            class="text-primary text-[27px] mb-1 lg:text-[36px] text-center lg:text-left"
+          >
+            <strong>HOW </strong>WE WORK
+          </h1>
+          <p class="font-semibold text-desc pb-7 text-center lg:text-left">
+            For the best
+          </p>
+        </div>
+        <div class="bg-[url('img/MMbackground.jpeg')] bg-cover">
+
+          <div class="container py-16">
+            <div >
+              <div class="swiper howWeWork">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+      <div class="flex justify-center flex-col items-center gap-4">
+        <img src="img/fMail.png" alt="">            
+        <h3 class="text-primary font-primary font-bold text-[18px]">Lorem ipsum dolor sit.</h3>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolorem.</p>
+      </div>    
+		</div>
+		<div class="swiper-slide">
+      <div class="flex justify-center flex-col items-center gap-4">
+        <img src="img/fMail.png" alt="">            
+        <h3 class="text-primary font-primary font-bold text-[18px]">Lorem ipsum dolor sit.</h3>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolorem.</p>
+      </div>    
+		</div>
+		<div class="swiper-slide">
+      <div class="flex justify-center flex-col items-center gap-4">
+        <img src="img/fMail.png" alt="">            
+        <h3 class="text-primary font-primary font-bold text-[18px]">Lorem ipsum dolor sit.</h3>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolorem.</p>
+      </div>    
+		</div>
+		<div class="swiper-slide">
+      <div class="flex justify-center flex-col items-center gap-4">
+        <img src="img/fMail.png" alt="">            
+        <h3 class="text-primary font-primary font-bold text-[18px]">Lorem ipsum dolor sit.</h3>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolorem.</p>
+      </div>    
+		</div>
+		<div class="swiper-slide">
+      <div class="flex justify-center flex-col items-center gap-4">
+        <img src="img/fMail.png" alt="">            
+        <h3 class="text-primary font-primary font-bold text-[18px]">Lorem ipsum dolor sit.</h3>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolorem.</p>
+      </div>    
+		</div>
+		<div class="swiper-slide">
+      <div class="flex justify-center flex-col items-center gap-4">
+        <img src="img/fMail.png" alt="">            
+        <h3 class="text-primary font-primary font-bold text-[18px]">Lorem ipsum dolor sit.</h3>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolorem.</p>
+      </div>    
+		</div>
+	</div>
+  <div class="flex justify-center mx-auto items-center">
+
+    <div class="custom-pagination-we-work mt-7 ml-20 lg:hidden"></div>
+  </div>
+              </div>
+            </div>
+            <div>
+              <a href="" target="_blank" class="wp-btn mt-10 text-normal text-desc flex justify-center items-center w-[277px] mx-auto font-secondary rounded-md p-2 hover:text-primaryHover">CONTACT US NOW <span class="pl-2"> <img src="img/wpLogo.png" alt=""></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- how we work-->
+      <!-- gallery -->
+      <section class="relative py-14">
+        <div class="container">
+           <h1
+            class="text-primary text-[27px] mb-1 lg:text-[36px] text-center lg:text-left"
+          >
+            <strong>XIRTIZ </strong>GALLERY
+          </h1>
+ <p class="font-semibold text-desc pb-7 text-center lg:text-left">
+            The most beautiful smiles
+          </p>
+          <div class="swiper max-lg:ml-7 max-lg:mr-7 swiper-gallery">
+	<div class="swiper-wrapper ">
+		<div class="swiper-slide "> 
+      <img src="img/p10.jpg" class="border-4 border-primary" alt="Client Teath">               
+		</div>
+		<div class="swiper-slide "> 
+      <img src="img/p10.jpg" class="border-4 border-primary" alt="Client Teath">               
+		</div>
+		<div class="swiper-slide "> 
+      <img src="img/p10.jpg" class="border-4 border-primary" alt="Client Teath">               
+		</div>
+		<div class="swiper-slide "> 
+      <img src="img/p10.jpg" class="border-4 border-primary" alt="Client Teath">               
+		</div>
+		<div class="swiper-slide "> 
+      <img src="img/p7.jpg" class="border-4 border-primary" alt="Client Teath">               
+		</div>
+    	<div class="swiper-slide "> 
+      <img src="img/p10.jpg" class="border-4 border-primary" alt="Client Teath">               
+		</div>
+    	<div class="swiper-slide "> 
+      <img src="img/p10.jpg" class="border-4 border-primary" alt="Client Teath">               
+		</div>
+   
+	</div>
+</div>
+        </div>
+         <div class="swiper-button-prev-gallery absolute right-[0%] lg:right-[10%] top-[50%]">
+<svg class="text-black w-12 h-12 border-2 border-black  rounded-md" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+    </div>
+    <div class="swiper-button-next-gallery absolute left-[0%] lg:left-[10%] top-[50%]">
+      <svg class="text-black w-12 h-12 border-2  border-black  rounded-md" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+</svg>
+    </div>
+      </section>
+      <!-- gallery -->
+         <!-- APPOINTMENT-->
+      <section  class="bg-[url('img/Bfwe2.jpg')] bg-cover py-14 relative">
+        <div class="container">
+          <div class="mx-auto flex justify-center items-center">
+
+            <h1
+            class="text-primary uppercase text-[27px] mb-1 lg:text-[36px] text-center  lg:text-left"
+            >
+            <strong>MAKE </strong>AN APPOINTMENT NOW
+          </h1>
+          </div>
+          <div class="mt-10 flex flex-col lg:flex-row justify-center lg:justify-evenly items-center gap-36 ">
+               <div class="swiper-button-prev-appointment absolute right-[10px] lg:right-[52%] top-[65%] lg:top-[50%]">
+<svg class="text-primary w-12 h-12 border-2 border-primary  rounded-md" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+    </div>
+    <div class="swiper-button-next-appointment absolute left-[10px] lg:left-[10%] top-[65%] lg:top-[50%]">
+      <svg class="text-primary w-12 h-12 border-2  border-primary  rounded-md" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+</svg>
+    </div>
+<div class="swiper swiper-appointment w-full lg:w-[50%] ">
+ 
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">    
+      <img src="img/ee.jpg" alt="costumer teath" class="border-4 rounded-xl  border-primary ">            
+		</div>
+		<div class="swiper-slide">    
+      <img src="img/ee.jpg" alt="costumer teath" class="border-4 rounded-xl  border-primary ">            
+		</div>
+		<div class="swiper-slide">    
+      <img src="img/ee.jpg" alt="costumer teath" class="border-4 rounded-xl  border-primary ">            
+		</div>
+		<div class="swiper-slide">    
+      <img src="img/ee.jpg" alt="costumer teath" class="border-4 rounded-xl  border-primary ">            
+		</div>
+	</div>
+  
+</div>
+
+      <div class=" w-full lg:w-[50%]">
+        <a href="" class="uppercase  mx-auto text-black font-bold text-2xl flex justify-center items-center font-secondary h-[80px] rounded-full w-[250px] md:w-[390px]  text-black  bg-[#f1d18f] hover:text-primaryHover">contact us now</a>
+      </div>
+      
+        </div>
+     
+      </section>
+      <!-- APPOINTMENT-->
+      <!-- faq -->
+      <section class="py-14">
+        <div class="container">
+            <h1
+            class="text-primary text-[27px] mb-1 lg:text-[36px] uppercase text-center lg:text-left"
+          >
+            <strong>XIRTIZ </strong>FAQ
+          </h1>
+ <p class="font-semibold text-desc pb-7 text-center lg:text-left">
+           We answered for you
+          </p>
+
+<div class=" mx-auto  ">
+	<div class="grid divide-y divide-neutral-200  mx-auto ">
+		<div class="py-5">
+			<details class="group">
+				<summary class="flex justify-between bg-white group-open:bg-primary p-5 items-center font-medium cursor-pointer list-none">
+					<span class=""> What is a SAAS platform?</span>
+					<span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+              </span>
+				</summary>
+				<p class="text-neutral-600 group-open:animate-fadeIn bg-white p-4">
+					 SAAS platform is a cloud-based software service that allows users to access
+					and use a variety of tools and functionality. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga harum corrupti consequuntur accusamus iste aliquam itaque beatae sequi temporibus.
+				</p>
+			</details>
+		</div>
+	
+	</div>
+</div>
+
+   </div>
+      </section>
+      <!-- faq -->
+    </main>
+
+    <div class="bg-base-200 bg-[url('img/asdw22.jpg')] bg-cover max-lg:text-center">
+      <footer class="footer p-10 text-base-content container text-white flex-wrap flex">
+        <aside>
+        <a href="">
+              <img
+                src="img/mainLogo.png"
+                class="w-full lg:w-[150px] bg-white rounded-xl auto max-lg:mb-5"
+                alt=""
+              />
+            </a>
+          <p class="w-full lg:w-[400px] text-[16px] leading-6">
+                XIRTIZ is a TURSAB ( Turkey Travel Agencies Association ) member tourism agency and
+                government certified and supported health tourism company. Our main office is located in
+                Antalya, but we have footprints around Turkey, and across Europe through many partnerships.
+            </p>
+        </aside>
+        <nav>
+          <h6 class="text-footerTitle text-[24px] mb-3">Xirtiz Health Tourism</h6>
+          <a href="https://goo.gl/maps/VdivuYECYhSBqtns5" class="flex items-center justify-center gap-2 hover:text-primaryHover transition-all duration-300 easy-in-out">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+</svg>
+          <div  class="footerLink linkHover w-56  text-4 font-semibold">
+             KIZILTOPRAK MAH. 921 SK. NO: 9 İÇ KAPI NO: 2 MURATPAŞA / ANTALYA </div>
+             </a>
+
+
+<a href="tel:+905307690836" class="flex items-center justify-center gap-2 hover:text-primaryHover transition-all duration-300 easy-in-out" >
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+</svg>
+ <div class="footerLink linkHover  text-4 font-semibold">
+       +90 530 769 08 36</div>
+
+</a>
+       <a href="mailto:info@xirtiz.com" class="flex items-center justify-center gap-2 hover:text-primaryHover transition-all duration-300 easy-in-out">
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+          </svg>
+           <div  class="footerLink linkHover  text-4 font-semibold">
+                info@xirtiz.com 
+            </div>
+        </a>
+
+      </nav>
+      <nav>
+        <a href="" class="uppercase  mx-auto text-black font-bold text-2xl flex justify-center items-center font-secondary h-[80px] rounded-full w-[250px] md:w-[390px]  text-black  bg-[#f1d18f] hover:text-primaryHover">contact us now</a>
+
+      </nav>
+     
+      </footer>
+       <div class="flex justify-center border-t border-primary container max-lg:pb-20">
+        <a href="" class="text-primary  pt-3">© 2023 Xirtiz Health Tourism - All Right Reserved</a>
+      </div>
+    </div>
+
+    <!-- special adding -->
+    <!-- wp start-->
+    <div>
+      <div class="" id="">
+        <div class="whatsapp-main">
+          <div
+            type="floating"
+            class="whatsapp-wrapper hide-whatsapp"
+            style="width: 360px"
+          >
+            <div
+              color="rgb(29, 33, 41)"
+              role="button"
+              tabindex="0"
+              class="close_whatsapp"
+            ></div>
+            <div class="whatsapp-header">
+              <div size="52" class="support-avatar">
+                <div class="avatar-wrapper">
+                  <div
+                    class="avatar-img"
+                    style="
+                      background-image: url(https://ozaytarim.moonsunum.com/upload/settings/logo-1.webp);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div class="header-info">
+                <div class="whatsapp-name">OZAY GROUP TARIM</div>
+                <div class="whatsapp-reply-time">Çevrimiçi</div>
+              </div>
+            </div>
+            <div class="whatsapp-background">
+              <div class="whatsapp-message-container">
+                <div class="loading-animation">
+                  <div class="dot-pulse"></div>
+                </div>
+                <div class="whatsapp-message-wrapper">
+                  <div class="chat-body-wrapper">
+                    <div class="whatsapp-chat-name">OZAY GROUP TARIM</div>
+                    <div class="whatsapp-chat-message">
+                      <div>
+                        <p>deneme</p>
+                      </div>
+                    </div>
+                    <div class="whatsapp-chat-time">16:54</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/902425027007?text=deneme"
+              title="WhatsApp"
+              class="whatsapp-btn"
+              role="button"
+              target="popup"
+              onclick="window.open('https://wa.me/902425027007?text=deneme','popup','width=700,height=600'); return false;"
+            >
+              <svg
+                class="whatsapp-send-icon-small"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1"
+                height="20"
+                viewBox="0 0 90 90"
+              >
+                <path
+                  d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z"
+                  fill="#FFF"
+                />
+              </svg>
+              <span class="chat-button-text">Whatsapp Sohbet</span>
+            </a>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <headers>
+      <a
+        style="background-color: #122e5c"
+        href="tel:902425027007"
+        class="callnow"
+      >
+        <i
+          class="fas fa-phone-alt"
+          style="padding-right: 5px; transform: rotate(0deg)"
+        ></i>
+        HEMEN ARA
+      </a>
+      <div class="whatsappx">
+        <div class="whatsapp-popup-button play-btn" id="whatsapp-popup">
+          <div class="whatsapp-button-main">WHATSAPP</div>
+        </div>
+      </div>
+    </headers>
+    <!-- wp end-->
+
+    <!-- special adding -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/wp.js"></script>
+  </body>
+</html>
